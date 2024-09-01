@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        height: 70vh;
+        width: 90vh;
+        background-color: blue;
+    }
+    .ball{
+        height: 10vh;
+        width: 10vh;
+        background-color: red;
+        border-radius: 70px;
+        animation:tranY 5s cubic-bezier(0.4, 0, 0.5, 0.5) 0s infinite alternate;
+    }
+
+    @keyframes tranX {
+        from{
+            
+        }
+        to{
+            transform: translateX(80vh);
+        }
+        
+    }
+    @keyframes tranY {
+       0%{
+            transform: translate(0vh,0vh);
+        }
+       10%{
+            transform: translate(10vh,-10vh);
+        }
+        20%{
+            transform: translate(23vh,0vh);
+        }
+        40%{
+            transform: translate(30vh,-10vh);
+        }
+        60%{
+            transform: translate(43vh,0vh);
+        }
+        80%{
+            transform: translate(50vh,-10vh);
+        }
+        90%{
+            transform: translate(67vh,0vh);
+        }
+        100%{
+            transform: translate(80vh,-15vh);
+        }
+        
+        
+    }
+</style>
+</head>
+<body>
+    <div class="box"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

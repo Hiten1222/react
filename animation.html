@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 90vh;
+            width: 95vw;
+            place-items: center;
+            transition: transform 3sec ease;
+        }
+
+        div {
+            height: 110px;
+            width: 180px;
+            text-align: center;
+            background-color: beige;
+            padding-top: 30px;
+        }
+
+        .a {
+            transform: translateX(0px);
+        }
+
+        .a:hover {
+            transform: translateX(30%);
+        }
+
+        .b {
+            transform: translateY(0px);
+            transition: all 3sec ease 0sec;
+        }
+
+        .b:hover {
+            transform: translateY(30%);
+        }
+
+        .c {
+            transform: translate(0px, 0px);
+            transition: all 3sec ease;
+        }
+
+        .c:hover {
+            transform: translate(30%, 30%);
+        }
+
+        .d {
+            transform: skewX(0deg);
+            transition: all 3sec ease;
+        }
+
+        .d:hover {
+            transform: skewX(30deg);
+        }
+
+        .e {
+            transform: skewY(0deg);
+            transition: all 3sec ease;
+        }
+
+        .e:hover {
+            transform: skewY(30deg);
+        }
+
+        .f {
+            transform: skew(0deg, 0deg);
+            transition: all 3sec ease;
+        }
+
+        .f:hover {
+            transform: skew(30deg, 30deg);
+        }
+
+        .g {
+            transform: scale(1);
+            transition: all 3sec ease;
+        }
+
+        .g:hover {
+            transform: scale(-1.5);
+        }
+
+        .h {
+            transform: matrix(1,0,0,1,0,0);
+            transition: all 3sec ease;
+        }
+
+        .h:hover {
+            transform: matrix(1.5,0,0,1.5,70,70);
+        }
+
+        .i {
+            transform: rotate(0turn);
+            transition: all 3sec ease;
+        }
+
+        .i:hover {
+            transform: rotate(0.175turn);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="a">translateX</div>
+        <div class="b">translateY</div>
+        <div class="c">translate</div>
+        <div class="d">skewX</div>
+        <div class="e">skewY</div>
+        <div class="f">skew</div>
+        <!-- <div>scaleX increase width scale y increase height</div> -->
+
+        <div class="g">scale</div> <!-- - values reverse the postion but work as same as positive -->
+
+        <!-- <div>The values represent the following functions: matrix(scaleX(), skewY(), skewX(), scaleY(),
+             translateX(),translateY())</div> -->
+
+        <div class="h">matrix</div>
+        <div class="i">rotate</div>
+
+    </main>
+
+</body>
+
+</html>
